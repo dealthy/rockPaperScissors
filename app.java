@@ -7,8 +7,23 @@
 import java.util.Scanner;
 import java.lang.Random;
 public class app{
-    public static String winner(int choice){
-        return winner;
+    public static String winner(int human){
+        // cases in total
+        int computer = Random(2);
+        if(human == computer){
+            return "draw";
+            //all draw cases (3)
+        } else if(human - computer == 1){
+            return "human";
+        } else if (computer - human == 1){
+            return "computer";
+            //3 cases when the rock meets paper
+        } else if(computer - human == 2){
+            return "human";
+        } else{
+            return "computer";
+            //3 cases when rock meets scissors
+        }
     }
     public static void main(String args[]){
         Scanner scan = new Scanner(System.in);
