@@ -1,0 +1,1 @@
+This program is a self-written rock paper scissors program playing with a computer
